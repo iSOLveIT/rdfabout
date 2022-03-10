@@ -36,6 +36,7 @@
       kbd,
       pre {
         font-family: 'Recursive', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
+        background-color: #3f51b721!important;
       }
     </style>
   {% endblock %}
@@ -48,7 +49,6 @@
   {% endblock %}
   <meta name="theme-color" content="{{ theme_theme_color }}">
   <script src="{{ pathto('_static/javascripts/modernizr.js', 1) }}"></script>
-  {% include "google_analytics.html" %}
   {% if theme_touch_icon %}
     <link rel="apple-touch-icon" href="{{ pathto('_static/' ~ theme_touch_icon, 1) }}"/>
   {% endif %}

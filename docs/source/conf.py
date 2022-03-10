@@ -28,8 +28,7 @@ author = 'Joshua Tauberer'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-]
+extensions = ['sphinx_material']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -55,14 +54,11 @@ html_theme_options = {
     # Set the color and the accent color
     'color_primary': 'blue',
     'color_accent': 'blue',
-    # Visible levels of the global TOC; -1 means unlimited
     'globaltoc_depth': 1,
-    # If False, expand all TOC entries
     'globaltoc_collapse': True,
-    # If True, show hidden TOC entries
     'globaltoc_includehidden': True,
-    # 'html_minify': True,
-    # 'css_minify': True,
+    'html_minify': True,
+    'css_minify': True,
  }
 html_sidebars = {
     "**": ["localtoc.html", "searchbox.html"]
