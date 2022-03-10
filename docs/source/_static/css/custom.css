@@ -34,3 +34,7 @@ pre{
     overflow-x: auto!important;
     margin: auto!important;
 }
+
+.md-tabs {
+    display: none!important;
+}
