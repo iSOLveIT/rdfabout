@@ -13,13 +13,14 @@
 # import os
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
+from datetime import datetime
 import sphinx_material
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'What is RDF and what is it good for?'
-copyright = '2022, Joshua Tauberer'
+project = 'Resource Description Framework'
+copyright = f"{datetime.utcnow().year}, Joshua Tauberer"
 author = 'Joshua Tauberer'
 
 
@@ -47,10 +48,10 @@ exclude_patterns = []
 # Required theme setup
 html_theme = 'sphinx_material'
 # Set link name generated in the top bar.
-html_title = 'Resource Description Framework'
-# Material theme options (see theme.conf for more information)
+html_title = 'RDF'
+html_logo = '_static/images/onto-logo.svg'
+html_favicon = '_static/images/onto-favicon.svg'
 html_theme_options = {
-    # 'base_url': 'https://docs.chipsee.com',
     # Set the color and the accent color
     'color_primary': 'blue',
     'color_accent': 'blue',
@@ -61,7 +62,7 @@ html_theme_options = {
     'css_minify': True,
  }
 html_sidebars = {
-    "**": ["localtoc.html", "searchbox.html"]
+    "**": ["globaltoc.html", "localtoc.html", "searchbox.html"]
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
